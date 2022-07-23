@@ -5,9 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:matematika"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="169" Margin="118,48,0,0" VerticalAlignment="Top" Width="371"/>
+        Title="математика" Height="400" Width="600">
+    <Grid x:Name="математика">
+        <Label Content="Введите Х" HorizontalAlignment="Left" Height="30" Margin="187,57,0,0" VerticalAlignment="Top" Width="69"/>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="26" Margin="176,92,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="90" />
+        <Label Content="Введите У
+               " HorizontalAlignment="Left" Height="30" Margin="334,57,0,0" VerticalAlignment="Top" Width="69"/>
+        <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Height="26" Margin="323,92,0,0" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="90"/>
+        <Label Content="( x + y ) / ( y + 1 ) - ( x * y - 12 ) / ( 34 + x )" HorizontalAlignment="Left" Height="30" Margin="176,146,0,0" VerticalAlignment="Top" Width="237"/>
+        <Button Content="Результат примера" HorizontalAlignment="Center" Height="37" Margin="0,192,0,0" VerticalAlignment="Top" Width="248" Click="Button_Click"/>
+        <TextBox x:Name="TextBox3" HorizontalAlignment="Center" Height="23" Margin="0,254,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="248"/>
+
 
     </Grid>
 </Window>

@@ -20,10 +20,32 @@ namespace matematika
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        
+
+
+        public void MainWindo()
         {
             InitializeComponent();
         }
 
+        
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            double x, y, res, a, b, c, d;
+            //res = 0;
+            x = Convert.ToDouble(TextBox1.Text);
+            y = Convert.ToDouble(TextBox2.Text);
+            a = x + y;
+            b= y + 1;
+            c = a / b;
+            a = x * y - 12;
+            b = 34 + x;
+            d = a / b;
+
+            res = c - d ;
+            TextBox3.Text = res.ToString();
+            
+
+        }
     }
 }
